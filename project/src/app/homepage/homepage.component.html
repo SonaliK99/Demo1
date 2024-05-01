@@ -1,0 +1,240 @@
+<div class="container1">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto"> <!-- Added ml-auto class for margin left auto -->
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">JOBS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CLIENTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">EMPLOYERS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CONTACT US</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- <p style="background-image: url('assets\images.jpg');"></p> -->
+        <div style="background-image: url('../..//assets/images.jpeg');"></div>
+    </nav>
+
+    <p class="fs-1  mt-5" style="margin-left: 220px;"> I am Looking for.. </p>
+    <div class="container mt-6">
+        <div class="col-8">
+            <form class="d-flex">
+                <input class="form-control me-2 small-search" type="search" placeholder="Enter a Job Description"
+                    aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i> <!-- Bootstrap Icon -->
+                    Search
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="container mt-5 fw-b">
+        <div class="row">
+            <div class="col-2">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="full-time" id="fullTimeCheckbox">
+                    <label class="form-check-label" for="fullTimeCheckbox">
+                        Full Time
+                    </label>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="part-time" id="partTimeCheckbox">
+                    <label class="form-check-label" for="partTimeCheckbox">
+                        Part Time /casual /Freelance
+                    </label>
+                </div>
+            </div>
+
+
+
+            <div class="col-2">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Select your Location">
+                    <div class="input-group-append">
+
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Alabama</a>
+                            <a class="dropdown-item" href="#">Alaska</a>
+                            <a class="dropdown-item" href="#">Arizona</a>
+                            <a class="dropdown-item" href="#">Arkansas</a>
+                            <a class="dropdown-item" href="#">California</a>
+                            <a class="dropdown-item" href="#">Colorado</a>
+                            <a class="dropdown-item" href="#">Connecticut</a>
+                            <a class="dropdown-item" href="#">Delaware</a>
+                            <a class="dropdown-item" href="#">Florida</a>
+                            <a class="dropdown-item" href="#">Georgia</a>
+                            <a class="dropdown-item" href="#">Hawaii</a>
+                            <a class="dropdown-item" href="#">Idaho</a>
+                            <a class="dropdown-item" href="#">Illinois</a>
+                            <a class="dropdown-item" href="#">Indiana</a>
+                            <a class="dropdown-item" href="#">Iowa</a>
+                            <a class="dropdown-item" href="#">Kansas</a>
+                            <a class="dropdown-item" href="#">Kentucky</a>
+                            <a class="dropdown-item" href="#">Louisiana</a>
+                            <a class="dropdown-item" href="#">Maine</a>
+                            <a class="dropdown-item" href="#">Maryland</a>
+                            <a class="dropdown-item" href="#">Massachusetts</a>
+                            <a class="dropdown-item" href="#">Michigan</a>
+                            <a class="dropdown-item" href="#">Minnesota</a>
+                            <a class="dropdown-item" href="#">Mississippi</a>
+                            <a class="dropdown-item" href="#">Missouri</a>
+                            <a class="dropdown-item" href="#">Montana</a>
+                            <a class="dropdown-item" href="#">Nebraska</a>
+                            <a class="dropdown-item" href="#">Nevada</a>
+                            <a class="dropdown-item" href="#">New Hampshire</a>
+                            <a class="dropdown-item" href="#">New Jersey</a>
+                            <a class="dropdown-item" href="#">New Mexico</a>
+                            <a class="dropdown-item" href="#">New York</a>
+                            <a class="dropdown-item" href="#">North Carolina</a>
+                            <a class="dropdown-item" href="#">North Dakota</a>
+                            <a class="dropdown-item" href="#">Ohio</a>
+                            <a class="dropdown-item" href="#">Oklahoma</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-6 mt-5" style="margin-left: 400px;">
+            <!-- <button data-bs-target="#test"  class="btn btn-primary">Register</button> -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Register
+            </button>
+        </div>
+
+
+    </div>
+
+</div>
+
+
+
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="max-width: 700px;">
+        <div class="modal-content" style="overflow-y: auto;">
+            <div style="color: white; background-color: blueviolet; height: 40px;">
+                Register
+            </div>
+
+            <div class="modal-header" style="padding: 20px;">
+                <!-- <h2 style="margin-bottom: 20px;">Registration Form</h2> -->
+                <form (ngSubmit)="saveForm()" style="margin-bottom: 20px;">
+
+                    <div class="form-group">
+                        <label for="photo" style="margin-bottom: 10px;">Passport Photo:</label>
+                        <input type="file" class="form-control-file" id="photo" (change)="onFileSelected($event)">
+                    </div>
+                    <div *ngIf="selectedFile">
+                        <img [src]="getPreviewUrl()" alt="Selected Photo" class="preview-image"
+                            style="margin-top: 10px; max-width: 100%;">
+                    </div>
+                    <div style="height: 140px; width: 140px;" *ngIf="!selectedFile">
+                        <img src="../../assets/young-smiling-man-adam-avatar-3d-vector-people-character-illustration-cartoon-minimal-style_365941-687.avif"
+                            alt="Placeholder Photo" class="preview-image" style="margin-top: 10px; max-width: 100%;">
+                        <!-- You can replace "placeholder_photo.jpg" with the path to your placeholder image -->
+                    </div>
+                    <div>
+                        <div style="margin-left: 250px;" class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="firstName">First Name:</label>
+                                <input type="text" class="form-control" id="firstName" [(ngModel)]="firstName"
+                                    name="firstName" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="lastName">Last Name:</label>
+                                <input type="text" class="form-control" id="lastName" [(ngModel)]="lastName"
+                                    name="lastName" required>
+                            </div>
+                        </div>
+
+
+
+                        <!-- <div class="form-row"> -->
+                        <div style="margin-left: 250px;">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" [(ngModel)]="email" name="email"
+                                required>
+                        </div><br>
+                        <div style="margin-left: 250px;">
+                            <label for="mobileNo">Mobile No:</label>
+                            <input type="tel" class="form-control" id="mobileNo" [(ngModel)]="mobileNo" name="mobileNo"
+                                required>
+                        </div><br>
+                        <!-- </div> -->
+
+
+                        <div style="margin-left: 250px;">
+                            <label for="age">Age:</label>
+                            <input type="range" class="form-range" id="age" min="0" max="100" [(ngModel)]="age"
+                                name="age" required>
+                            <output for="age" id="ageOutput">{{ age }}</output>
+                        </div>
+
+                        <div style="margin-left: 250px;">
+                            <label for="state">State:</label>
+                            <input type="text" class="form-control" id="state" [(ngModel)]="state" name="state"
+                                required>
+                        </div><br>
+
+                        <div style="margin-left: 250px;">
+                            <label for="country">Country:</label>
+                            <input type="text" class="form-control" id="country" [(ngModel)]="country" name="country"
+                                required>
+                        </div><br>
+                        <div style="margin-left: 250px;">
+                            <label for="Address">Address:</label>
+                            <input type="text" class="form-control" id="Address" [(ngModel)]="country" name="Address"
+                                required>
+                        </div><br>
+                        <div style="margin-left: 250px;">
+                            <label for="Tags">Tags:</label>
+                            <input type="text" class="form-control" id="Tags" [(ngModel)]="country" name="Tags"
+                                required>
+                        </div><br>
+
+                        <div style="margin-left: 250px;">
+                            <button type="submit" class="btn btn-secondary">Cricket</button> &nbsp;
+                            <button type="submit" class="btn btn-secondary">Football</button>&nbsp;
+                            <button type="submit" class="btn btn-secondary">Hockey</button>&nbsp;
+                        </div>
+                        <br> <br>
+                        <div style="margin-left: 400px"> <button type="submit" class="btn btn-secondary">Cancel</button>
+                            &nbsp;
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div> -->
+        </div>
+    </div>
+</div>
